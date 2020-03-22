@@ -8,73 +8,161 @@
     <title>Jin Cheng's page</title>
     <link rel=" stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <style>
-        section {
-            margin-bottom: 10px;
-            padding-bottom: 5px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
     <section class="container-fluid text-center">
         <h2>Jin Cheng's Page</h2>
-        <section class="card">
-            <section class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </section>
-        </section>
+        <p>Works below are inspired by school projects or internship experience. They demonstrate the skills I currently
+            have.</p>
 
-        <section class="card">
-            <section class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+        <section class="container">
+            <section class="row">
+                <section class="col-md">
+                    <section class="card">
+                        <section class="card-body">
+                            <h5 class="card-title">Terrific toys</h5>
+                            <img src="images/frontPage.PNG" class="img-fluid" alt="online store image">
+                            <a href="#" class="btn btn-primary" data-toggle="modal"
+                                data-target="#terrificToyModal">Details</a>
+                        </section>
+                    </section>
+                </section>
+                <section class="col-md">
+                    <section class="card">
+                        <section class="card-body">
+                            <h5 class="card-title">Simple Appointment page</h5>
+                            <img src="images/book.PNG" class="img-fluid" alt="online appointment image">
+                            <a href="#" class="btn btn-primary" data-toggle="modal"
+                                data-target="#bookingPageModal">Details</a>
+                        </section>
+                    </section>
+                </section>
             </section>
-        </section>
-        <section class="card">
-            <section class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </section>
-        </section>
-        <section class="card">
-            <section class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </section>
-        </section>
-        <section class="card">
-            <section class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </section>
-        </section>
-        <section class="card">
-            <section class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </section>
-        </section>
+            <section class="row">
+                <section class="col-md">
+                    <section class="card">
+                        <section class="card-body">
+                            <h5 class="card-title">WalkingApp</h5>
+                            <img src="images/walking.jpg" class="img-fluid" alt="walking app image">
+                            <p><a href="#" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#walkingAppModal">Details</a></p>
+                        </section>
+                    </section>
+                </section>
+                <section class="col-md">
+                    <section class="card">
+                        <section class="card-body">
+                            <h5 class="card-title">Dictionary + Jokes Robot</h5>
+                            <img src="images/chatbot.PNG" class="img-fluid" alt="chatbot image">
+                            <p><a href="#" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#dictionaryJokesModal">Details</a></p>
+                        </section>
+                    </section>
 
-    </section>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+                </section>
+            </section>
+        </section>
+        <div class="modal" tabindex="-1" role="dialog" id="terrrificToyModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Terrific Toys</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>A basic imitation of an online store. The app is hosted on Google App Engine and uses data
+                            stored
+                            in Google Cloud Datastore. The key functionality of the app is the shopping cart. Data of
+                            the
+                            shopping cart is updated using AJAX.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" tabindex="-1" role="dialog" id="bookingPageModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Booking/Appoinment Page</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>A web app that simulates a user selecting date and time make for an appointment or booking.
+                            The
+                            app is hosted on Google App
+                            Engine and uses data stored
+                            in Google Cloud Datastore. While a booking is being made, the timeslot is put on hold and
+                            not
+                            selectable by others
+                            The holding time is indefinite until user confirms or cancels the selection.
+                            Confirmed booking and on-hold timeslot is updated every 1 second</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" tabindex="-1" role="dialog" id="walkingAppModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Walking App</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>A basic Android app that operates similarly to a fitness app. The path that the user walks or
+                            runs is drawn on the map using Google Maps API.
+
+                            Data of the distance covered,the time elapsed and the path taken are stored in Firebase
+                            Realtime
+                            Database.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" tabindex="-1" role="dialog" id="dictionaryJokesModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Dictionary + Jokes Robot</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>An attempt to make a chatbot using Google's Dialogflow.It can provide the meaning of any
+                            english
+                            word. It also tells jokes about chuck norris. </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
