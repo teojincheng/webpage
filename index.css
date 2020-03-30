@@ -6,3 +6,13 @@ section {
 #lemtyc-pic {
   height: 239px;
 }
+
+.main-text {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30em;
+}
+
+li {
+  margin-bottom: 5px;
+}
